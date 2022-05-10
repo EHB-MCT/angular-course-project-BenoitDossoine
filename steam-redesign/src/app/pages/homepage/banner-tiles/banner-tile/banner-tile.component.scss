@@ -1,0 +1,16 @@
+@import './_variables';
+:host{
+    width: 25%;
+    height: 200px;
+
+    background-color: white;
+
+    border-radius: $border-radius;
+    border: $highlight-color 3px solid;
+    box-shadow: 0 0 10px $highlight-color;
+
+    transition: transform 0.5s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
