@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { BannerComponent } from './homepage/banner/banner.component';
 import { BannerTilesComponent } from './homepage/banner-tiles/banner-tiles.component';
 import { BannerTileComponent } from './homepage/banner-tiles/banner-tile/banner-tile.component';
+import { ShopListComponent } from './shop-list/shop-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BannerTileComponent } from './homepage/banner-tiles/banner-tile/banner-
     HomepageComponent,
     BannerComponent,
     BannerTilesComponent,
-    BannerTileComponent
+    BannerTileComponent,
+    ShopListComponent
   ],
   imports: [
     BrowserModule,
