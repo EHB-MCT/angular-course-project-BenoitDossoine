@@ -6,6 +6,7 @@ import { Component, HostBinding, Input, OnInit } from '@angular/core';
   styleUrls: ['./banner-button.component.scss']
 })
 export class BannerButtonComponent implements OnInit {
+  @Input() text: string=""; 
   constructor() { }
 
   ngOnInit(): void {

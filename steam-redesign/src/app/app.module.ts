@@ -10,7 +10,7 @@ import { BannerTilesComponent } from './homepage/banner-tiles/banner-tiles.compo
 import { BannerTileComponent } from './homepage/banner-tiles/banner-tile/banner-tile.component';
 import { ShopListComponent } from './shop-list/shop-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BannerButtonComponent } from './banner-button/banner-button.component';
+import { BannerButtonComponent } from './homepage/banner/banner-button/banner-button.component';
 
 @NgModule({
   declarations: [

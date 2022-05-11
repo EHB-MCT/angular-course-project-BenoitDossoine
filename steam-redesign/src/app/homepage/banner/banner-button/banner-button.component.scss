@@ -29,8 +29,14 @@
 
     padding: 0.2em 0;
     box-shadow: 0 0 10px $highlight-color;
+
+    transition: all 0.2s;
     
     &:first-child{
         margin-right: 5%;
+    }
+
+    &:hover{
+        transform: scale(1.05);
     }
 }
