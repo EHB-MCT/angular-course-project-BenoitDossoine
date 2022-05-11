@@ -1,4 +1,1 @@
-<app-banner-tile></app-banner-tile>
-<app-banner-tile></app-banner-tile>
-<app-banner-tile></app-banner-tile>
-<app-banner-tile></app-banner-tile>
+<app-banner-tile *ngFor="let game of games" [game]="game"></app-banner-tile>

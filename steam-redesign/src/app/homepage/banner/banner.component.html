@@ -1,14 +1,15 @@
 <div class="banner">
-    <img src="/assets/img/elden_ring_banner.jpg" alt="" class="bannerImg">
+    <img src="{{game.header}}" alt="" class="bannerImg">
     <div class="gradient"></div>
     <div class="bannerDetails">
-        <img src="/assets/img/elden_ring_logo.png" alt="" class="logoImg">
+        <!-- <p class="bannerTitle">{{game.name}}</p> -->
+        <!-- <img src="/assets/img/elden_ring_logo.png" alt="" class="logoImg"> -->
         <p class="bannerText">
-            Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.
+            {{game.description}}
         </p>
         <div class="bannerBtns">
-            <button>Buy now</button>
-            <button>Read more</button>
+            <app-banner-button class="filled"></app-banner-button>
+            <app-banner-button class="unfilled"></app-banner-button>
         </div>
     </div>
 </div>

@@ -1,3 +1,4 @@
+import { Services } from './services/index';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,6 +9,8 @@ import { BannerComponent } from './homepage/banner/banner.component';
 import { BannerTilesComponent } from './homepage/banner-tiles/banner-tiles.component';
 import { BannerTileComponent } from './homepage/banner-tiles/banner-tile/banner-tile.component';
 import { ShopListComponent } from './shop-list/shop-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BannerButtonComponent } from './banner-button/banner-button.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,15 @@ import { ShopListComponent } from './shop-list/shop-list.component';
     BannerComponent,
     BannerTilesComponent,
     BannerTileComponent,
-    ShopListComponent
+    ShopListComponent,
+    BannerButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [Services],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

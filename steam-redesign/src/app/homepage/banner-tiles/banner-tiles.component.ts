@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-banner-tiles',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner-tiles.component.scss']
 })
 export class BannerTilesComponent implements OnInit {
-
+  @Input() games:any;
   constructor() { }
 
   ngOnInit(): void {

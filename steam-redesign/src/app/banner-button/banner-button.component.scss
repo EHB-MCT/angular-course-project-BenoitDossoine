@@ -1,0 +1,36 @@
+@import './_variables';
+
+:host(.filled){
+    .bannerBtn{
+        background-color: $highlight-color;
+        color: $background-color;   
+    }
+}
+
+:host(.unfilled){
+    .bannerBtn{
+        background-color: $background-color;
+        color: $highlight-color;  
+    }
+}
+
+
+
+.bannerBtn{
+    background: none;
+    border-radius: 10px;
+    border: $highlight-color 2px solid;
+
+    width: 45%;
+    box-sizing: border-box;
+    font-family: $font-family;
+    font-size: 25px;
+    font-weight: 500;
+
+    padding: 0.2em 0;
+    box-shadow: 0 0 10px $highlight-color;
+    
+    &:first-child{
+        margin-right: 5%;
+    }
+}
