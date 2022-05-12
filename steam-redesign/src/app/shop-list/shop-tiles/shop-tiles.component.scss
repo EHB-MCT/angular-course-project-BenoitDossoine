@@ -1,0 +1,12 @@
+:host{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+     
+    h2{
+        width: 100%;
+        display: inline-block;
+        grid-row: 1/span 1;
+        grid-column: 1/span 3;
+    }
+}

@@ -31,4 +31,17 @@ export class GamesService{
             });
         }))
     }
+
+    getGamesByGenre():any{
+        return this.httpClient.get(`${this.urlBase}gamesByGenre`)
+        .pipe(map((response:any)=>{
+            return(response?.results || []).slice(0,3).map((game:any)=>{
+                return{
+                    name: game.name,
+                    id: game.id,
+                    image: game.background_image
+                }
+            });
+        }))
+    }
 }
