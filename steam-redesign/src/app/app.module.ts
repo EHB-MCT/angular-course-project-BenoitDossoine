@@ -15,6 +15,8 @@ import { ShopTilesComponent } from './shop-list/shop-tiles/shop-tiles.component'
 import { ShopTileComponent } from './shop-list/shop-tiles/shop-tile/shop-tile.component';
 
 import {FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { DetailPageComponent } from './detail-page/detail-page.component';
+import { DetailBannerComponent } from './detail-page/detail-banner/detail-banner.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import {FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesom
     BannerButtonComponent,
     ShopTilesComponent,
     ShopTileComponent,
+    DetailPageComponent,
+    DetailBannerComponent,
   ],
   imports: [
     BrowserModule,
