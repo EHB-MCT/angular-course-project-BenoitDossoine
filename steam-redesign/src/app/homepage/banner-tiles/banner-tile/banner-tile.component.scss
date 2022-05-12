@@ -12,13 +12,14 @@
     overflow: hidden;
 
     border-radius: $border-radius;
-    border: $highlight-color 3px solid;
-    box-shadow: 0 0 10px $highlight-color;
+    
 
     text-align: center;
-    transition: transform 0.5s;
+    transition: all 0.5s;
     &:hover{
         transform: scale(1.05);
+        border: $highlight-color 3px solid;
+    box-shadow: 0 0 10px $highlight-color;
     }
 
 
