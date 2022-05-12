@@ -52,14 +52,28 @@
             border: 2px solid $highlight-color;
             padding: 0.4em 0.75em;
             border-radius: 7px;
+
+            &.filled{
+                background-color: $highlight-color;
+
+                svg{
+                    fill: #2F2F2F;
+                }
+            }
         }
 
         svg{
             width: 28px;
+            height: 30px;
             fill: $highlight-color;
+        }
+
+        svg.filled{
+            fill: #2F2F2F;
         }
     }
 
+    transition: transform 0.2s;
     &:hover{
         transform: scale(1.02);
     }
