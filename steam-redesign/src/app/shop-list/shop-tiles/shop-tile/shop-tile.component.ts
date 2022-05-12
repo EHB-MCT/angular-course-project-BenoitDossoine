@@ -11,6 +11,7 @@ export class ShopTileComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

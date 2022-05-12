@@ -14,6 +14,9 @@ import { BannerButtonComponent } from './homepage/banner/banner-button/banner-bu
 import { ShopTilesComponent } from './shop-list/shop-tiles/shop-tiles.component';
 import { ShopTileComponent } from './shop-list/shop-tiles/shop-tile/shop-tile.component';
 
+import {FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,8 +33,13 @@ import { ShopTileComponent } from './shop-list/shop-tiles/shop-tile/shop-tile.co
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [Services],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(library:FaIconLibrary){
+    library.addIcons()
+  }
+}
