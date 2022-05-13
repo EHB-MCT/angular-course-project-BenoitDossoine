@@ -1,4 +1,4 @@
-import { GamesService } from './../../services/games/games.service';
+import { GamesService } from './../../../services/games/games.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,7 +11,7 @@ export class ShopTilesComponent implements OnInit {
   constructor(private gamesService:GamesService) { }
 
   ngOnInit(): void {
-    this.gamesService.getGamesByGenre().subscribe((data:any)=>{
+    this.gamesService.getGamesByGenre('adventure').subscribe((data:any)=>{
       this.games = data;
     })
   }

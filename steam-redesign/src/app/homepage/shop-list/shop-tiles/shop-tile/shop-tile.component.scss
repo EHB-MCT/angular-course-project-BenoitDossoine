@@ -3,6 +3,11 @@
     overflow: hidden;
 
     background-color: #2F2F2F;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
     img{
         width: 100%;
         height: 242px;
@@ -34,6 +39,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+       
 
         .gamePrice{
             font-size: 25px;
