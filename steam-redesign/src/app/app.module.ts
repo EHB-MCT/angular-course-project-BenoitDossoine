@@ -8,16 +8,17 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { BannerComponent } from './homepage/banner/banner.component';
 import { BannerTilesComponent } from './homepage/banner-tiles/banner-tiles.component';
 import { BannerTileComponent } from './homepage/banner-tiles/banner-tile/banner-tile.component';
-import { ShopListComponent } from './shop-list/shop-list.component';
+import { ShopListComponent } from './homepage/shop-list/shop-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BannerButtonComponent } from './homepage/banner/banner-button/banner-button.component';
-import { ShopTilesComponent } from './shop-list/shop-tiles/shop-tiles.component';
-import { ShopTileComponent } from './shop-list/shop-tiles/shop-tile/shop-tile.component';
+import { ShopTilesComponent } from './homepage/shop-list/shop-tiles/shop-tiles.component';
+import { ShopTileComponent } from './homepage/shop-list/shop-tiles/shop-tile/shop-tile.component';
 
 import {FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { DetailPageComponent } from './detail-page/detail-page.component';
 import { DetailBannerComponent } from './detail-page/detail-banner/detail-banner.component';
 import { ScreenshotsComponent } from './detail-page/screenshots/screenshots.component';
+import { DetailSpecsComponent } from './detail-page/detail-specs/detail-specs.component';
 
 
 @NgModule({
@@ -34,12 +35,13 @@ import { ScreenshotsComponent } from './detail-page/screenshots/screenshots.comp
     DetailPageComponent,
     DetailBannerComponent,
     ScreenshotsComponent,
+    DetailSpecsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule,
   ],
   providers: [Services],
   bootstrap: [AppComponent]

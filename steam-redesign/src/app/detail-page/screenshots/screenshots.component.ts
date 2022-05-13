@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-screenshots',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./screenshots.component.scss']
 })
 export class ScreenshotsComponent implements OnInit {
-
+  @Input() game:any;
   constructor() { }
 
   ngOnInit(): void {

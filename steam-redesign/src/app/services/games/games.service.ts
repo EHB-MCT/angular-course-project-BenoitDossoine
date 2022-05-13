@@ -32,8 +32,8 @@ export class GamesService{
         }))
     }
 
-    getGamesByGenre():any{
-        return this.httpClient.get(`${this.urlBase}gamesByGenre`)
+    getGamesByGenre(genre:string):any{
+        return this.httpClient.get(`${this.urlBase}gamesByGenre?genre=${genre}`)
         .pipe(map((response:any)=>{
             return(response?.results || []).slice(0,3).map((game:any)=>{
                 return{
@@ -42,6 +42,13 @@ export class GamesService{
                     image: game.background_image
                 }
             });
+        }))
+    }
+
+    getDetailPage(id:any):any{
+        return this.httpClient.get(`${this.urlBase}gameDetails?id=${id}`)
+        .pipe(map((response:any)=>{
+            return response;
         }))
     }
 }
