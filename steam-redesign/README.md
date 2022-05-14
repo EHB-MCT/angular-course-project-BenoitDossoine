@@ -1,27 +1,15 @@
 # SteamRedesign
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+## Sources
 
-## Development server
+How to repeat html elements based on a number <br>
+https://www.geeksforgeeks.org/how-to-repeat-html-element-multiple-times-using-ngfor-based-on-a-number/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Routing <br>
+https://angular.io/guide/router
 
-## Code scaffolding
+ngAfterViewInit and research on lifecycles <br>
+https://angular.io/api/core/AfterViewInit
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Sharing data between child and parent directives and components <br>
+https://angular.io/guide/inputs-outputs
