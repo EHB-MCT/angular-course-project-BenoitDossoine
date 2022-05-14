@@ -1,5 +1,9 @@
 # SteamRedesign
 
+
+## Deployment
+Deployment was done via firebase. <br>
+https://steamredesignangular.web.app/ 
 ## Sources
 
 How to repeat html elements based on a number <br>
