@@ -24,8 +24,6 @@ export class DetailPageComponent implements OnInit {
     this.gamesService.getDetailPage(this.id).subscribe((data:any) =>{
       this.game = data;
     })
-
-    console.log(this.game);
   }
 
 }

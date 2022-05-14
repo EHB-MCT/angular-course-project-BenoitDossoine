@@ -7,7 +7,7 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 })
 export class DetailBannerComponent implements OnInit {
   @Input() game:any
-  public rating  ="No review yet";
+  public rating  ="No reviews yet";
   constructor() { }
 
   ngOnInit(): void {
@@ -19,7 +19,6 @@ export class DetailBannerComponent implements OnInit {
   }
 
   public defineRating(rating:number){
-    console.log("hello");
     if(rating>4.5){
       this.rating = "Overwhelmingly positive";
     } else if(rating>4){
