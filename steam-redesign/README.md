@@ -13,3 +13,6 @@ https://angular.io/api/core/AfterViewInit
 
 Sharing data between child and parent directives and components <br>
 https://angular.io/guide/inputs-outputs
+
+Deploy Angular  App to Production with Firebase Hosting <br>
+https://www.positronx.io/deploy-angular-app-to-production-with-firebase-hosting/
