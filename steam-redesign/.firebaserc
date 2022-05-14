@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "steamredesignangular": {
+      "hosting": {
+        "steam-redesign": [
+          "steamredesignangular"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "steamredesignangular"
+  }
+}

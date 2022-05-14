@@ -34,7 +34,9 @@
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["./src/scss"]
+              "includePaths": [
+                "./src/scss"
+              ]
             },
             "scripts": []
           },
@@ -105,9 +107,21 @@
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["./src/scss"]
+              "includePaths": [
+                "./src/scss"
+              ]
             },
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "steam-redesign:build:production",
+            "firebaseProject": "steamredesignangular",
+            "firebaseHostingSite": "steamredesignangular"
           }
         }
       }
