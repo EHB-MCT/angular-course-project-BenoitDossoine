@@ -1,5 +1,5 @@
 import { GamesService } from './../../../services/games/games.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-shop-tiles',
@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shop-tiles.component.scss']
 })
 export class ShopTilesComponent implements OnInit {
+  @Input() category: any;
   public games:any;
   constructor(private gamesService:GamesService) { }
 
   ngOnInit(): void {
-    this.gamesService.getGamesByGenre('adventure').subscribe((data:any)=>{
+    this.gamesService.getGamesByGenre(this.category).subscribe((data:any)=>{
       this.games = data;
     })
   }

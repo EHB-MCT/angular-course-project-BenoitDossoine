@@ -1,3 +1,5 @@
-<h2>Your wishlist</h2>
-<app-shop-tile *ngFor="let game of games" [game]="game"></app-shop-tile>
+<h2>{{category}}</h2>
+<div class="shopTilesContainer">
+    <app-shop-tile *ngFor="let game of games" [game]="game"></app-shop-tile>
+</div>
 

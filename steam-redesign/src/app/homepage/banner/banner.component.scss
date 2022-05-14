@@ -41,16 +41,19 @@
     
     .bannerDetails{
         position: absolute;
-        top: 20%;
+        top: 15%;
         left: 242px;
         
-        img.logoImg{
-            width: 25vw;
+        .bannerTitle{
+            font-size: 50px;
+            margin-bottom: 0.7em;
         }
 
         .bannerText{
             width: 20vw;
             font-size: 20px;
+            font-weight: 300;
+
         }
     }
 
