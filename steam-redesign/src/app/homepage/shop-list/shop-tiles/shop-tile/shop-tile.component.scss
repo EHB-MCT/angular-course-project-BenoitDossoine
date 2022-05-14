@@ -42,16 +42,46 @@
        
 
         .gamePrice{
-            font-size: 25px;
+            font-size: 20px;
+            font-weight: 300;
+
+            display: flex;
+            align-items: center;
+            
+            svg{
+                transform: rotate(0deg);
+                transition: all 0.5s ease;
+                height: 20px;
+                fill: $highlight-color;
+            }
+
+            &:hover{
+                svg{
+                    transform: rotate(360deg);
+                }
+            }
         }
 
         .gameTitle{
-            font-size: 20px;
+            font-size: 25px;
         }
 
         button{
             background: none;
             border: none;
+        }
+
+        .heartButton{
+            svg{
+                transform: scale(0.95);
+                transition: transform 0.2s ease;
+            }
+        }
+
+        .heartButton:hover{
+            svg{
+                transform: scale(1);
+            }
         }
 
         .cartBtn{
