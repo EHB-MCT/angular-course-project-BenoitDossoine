@@ -22,4 +22,8 @@ export class HomepageComponent implements OnInit {
       this.bannerGame = this.featuredGames[0];
     })
   }
+
+  changeBannerGame(i:number){
+    this.bannerGame=this.featuredGames[i];
+  }
 }

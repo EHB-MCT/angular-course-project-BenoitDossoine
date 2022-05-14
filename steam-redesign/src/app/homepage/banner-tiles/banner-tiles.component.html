@@ -1,1 +1,1 @@
-<app-banner-tile *ngFor="let game of games" [game]="game"></app-banner-tile>
+<app-banner-tile *ngFor="let game of games; let i=index" [attr.data-index]="i" [game]="game" (click)="changeBannerGame(i)"></app-banner-tile>
