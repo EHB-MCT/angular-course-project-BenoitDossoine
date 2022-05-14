@@ -1,1 +1,51 @@
-<p>detail-specs works!</p>
+<div class="leftDetails">
+    <ul>
+        <li id="descriptionBtn" class="active"><button (click)="showDescription()">Description</button></li>
+        <li id="requirementsBtn"><button (click)="showRequirements()">System requirements</button></li>
+        <li id="reviewBtn"><button (click)="showReviews()">Reviews ({{game.reviews_count}})</button></li>
+    </ul>
+    
+    <div class="detailsContainer">
+        <div [innerHtml]="game.description" *ngIf="descriptionShown">
+        </div>
+    
+        <div [innerHtml]="recommended" *ngIf="requirementsShown"></div>
+    
+        <div class="ratings" *ngIf="reviewsShown">
+            <div class="ratingContainer" *ngFor="let rating of ratings">
+                <span class="backgroundScore"></span><span [ngStyle]="{width: rating.percent+'%'}" class="scoreSpan"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="rightDetails">
+    <div class="extraInfo">
+        <h2>Extra information</h2>
+        <div class="informationContainer">
+            <p>Release date</p>
+            <p>{{game.released}}</p>
+        </div>
+        <div class="informationContainer">
+            <p>Developers</p>
+            <div class="nameContainer">
+                <p *ngFor="let dev of game.developers">{{dev.name}}</p>
+            </div>
+        </div>
+        <div class="informationContainer">
+            <p>Publishers</p>
+            <div class="nameContainer">
+                <p *ngFor="let pub of game.publishers">{{pub.name}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gameFeatures">
+        <h2>Game features</h2>
+        <p *ngFor="let feature of game.tags">{{feature.name}}</p>
+    </div>
+
+
+</div>
+
+

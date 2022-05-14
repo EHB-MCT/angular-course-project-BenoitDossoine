@@ -1,0 +1,99 @@
+@import './_variables';
+:host{
+    margin: 90px $spacer 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+    .leftDetails{
+        grid-column: 1/span 2;
+        ul{
+            width: 100%;
+            padding: 0 0 5px 0;
+    
+            list-style: none;
+    
+            display: flex;
+            flex-direction: row;
+    
+            border-bottom: 2px solid $highlight-color;
+    
+            li{
+                padding: 0 15px;
+                opacity: 80%;
+    
+                &.active{
+                    opacity: 100%;
+                }
+    
+                button{
+                    background: none;
+                    color: inherit;
+                    border:none;
+                    font-family: $font-family;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+    
+        .detailsContainer{
+            min-height: 20vh;
+            padding-right: 8vw;
+        }
+    
+        .ratings{
+            width: 50%;
+    
+            .ratingContainer{
+                height: 10px;
+            }
+    
+            .backgroundScore{
+                width: 100%;
+                height: 50px;
+    
+                background-color: white;
+            }
+    
+            span{
+                background-color: red;
+                height: 50px;
+            }
+        }
+    }
+
+    .rightDetails{
+        h2{
+            font-size: 20px;
+            font-weight: 300;
+
+            padding-bottom: 5px;
+            border-bottom: 2px solid $highlight-color;
+        }
+
+        .informationContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+            p{
+                margin: 0;
+            }
+
+            margin-bottom: 20px;
+        }
+        
+        .nameContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            p{
+                margin: 0;
+            }
+        }
+    }
+    
+}
