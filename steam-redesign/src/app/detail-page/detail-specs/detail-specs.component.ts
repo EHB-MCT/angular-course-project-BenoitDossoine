@@ -31,14 +31,16 @@ export class DetailSpecsComponent implements OnInit {
       this.recommended = this.requirements.recommended;
     }
 
-    this.ratings = this.game.ratings;
+    this.ratings = this.game.ratings.sort((a:any,b:any)=>b.id - a.id);
+    this.ratings.forEach( (rating:any)=> rating.id =parseInt(rating.id));
+  
     console.log(this.ratings);
   }
 
   showDescription(){
     document.getElementById("descriptionBtn")?.classList.add('active');
     document.getElementById("requirementsBtn")?.classList.remove('active');
-    document.getElementById("reviewsBtn")?.classList.remove('active');
+    document.getElementById("reviewBtn")?.classList.remove('active');
 
     this.descriptionShown = true;
     this.requirementsShown = false;
@@ -48,7 +50,7 @@ export class DetailSpecsComponent implements OnInit {
   showRequirements(){
     document.getElementById("descriptionBtn")?.classList.remove('active');
     document.getElementById("requirementsBtn")?.classList.add('active');
-    document.getElementById("reviewsBtn")?.classList.remove('active');
+    document.getElementById("reviewBtn")?.classList.remove('active');
 
     this.descriptionShown = false;
     this.requirementsShown = true;
@@ -62,6 +64,10 @@ export class DetailSpecsComponent implements OnInit {
     this.descriptionShown = false;
     this.requirementsShown = false;
     this.reviewsShown = true;
+  }
+
+  numSequence(x:number):Array<number>{
+    return Array(x);
   }
 
 }

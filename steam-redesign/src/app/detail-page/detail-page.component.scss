@@ -1,0 +1,51 @@
+@import './_variables';
+:host{
+    width: 100vw;
+    overflow: hidden;
+
+    .loading{
+        display: flex;
+        justify-content: center;
+        margin: 0 $spacer;
+        overflow: hidden;
+        margin-top: 10vh;
+        svg{
+            fill: $highlight-color;
+            max-width: calc(100vw - 2 * $spacer);
+            max-height: 60vh;
+            margin: 10px;
+            
+            animation: loading 3s ease infinite;
+
+            filter: drop-shadow(0 0 10px $highlight-color);
+            
+        }
+
+        p{
+            color:$highlight-color;
+            font-size: 25px;
+            opacity: 0;
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:first-of-type{
+                animation: appear 1s linear 2s forwards, appear 1s linear 7s reverse forwards;
+            }
+            &:nth-of-type(2){
+                animation: appear 1s linear 8s forwards;
+            }
+        }
+    }
+}
+
+@keyframes loading{
+    0% {transform: rotateZ(0deg) scale(1)}
+    50% {transform: rotateZ(180deg) scale(0.8)}
+    100% {transform: rotateZ(0deg) scale(1)}
+}
+
+@keyframes appear{
+    from{opacity: 0} to {opacity:1}
+}

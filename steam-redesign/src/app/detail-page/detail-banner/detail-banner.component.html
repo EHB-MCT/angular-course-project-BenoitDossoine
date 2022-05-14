@@ -1,7 +1,7 @@
 <div class="detailBannerImgContainer"><img src="{{game.background_image}}" alt=""></div>
 <div class="detailBannerDetailsContainer">
     <p class="gameTitle">{{game.name}}</p>
-    <p class="gameSpecs"><span>{{rating}}</span> | <span>English and 24 more</span> | <span>Windows</span></p>
+    <p class="gameSpecs"><span>{{rating}}</span> | <span>{{game.genres[0].name}} and {{game.genres.length -1}} more</span> | <span>{{game.parent_platforms[0].platform.name}} and {{game.parent_platforms.length-1}} others</span></p>
 </div>
 <div class="detailBannerTile">
     <p class="price">€59,99</p>

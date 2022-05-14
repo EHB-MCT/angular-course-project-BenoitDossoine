@@ -1,5 +1,5 @@
 import { GamesService } from './../services/games/games.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
@@ -8,9 +8,10 @@ import { switchMap } from 'rxjs/operators';
   templateUrl: './detail-page.component.html',
   styleUrls: ['./detail-page.component.scss']
 })
-export class DetailPageComponent implements OnInit {
+export class DetailPageComponent implements OnInit,AfterViewInit {
   public id:any;
   public game: any;
+  public loading = true;
   constructor(private gamesService:GamesService,
               private route: ActivatedRoute,
               private router: Router) { }
@@ -24,6 +25,10 @@ export class DetailPageComponent implements OnInit {
     this.gamesService.getDetailPage(this.id).subscribe((data:any) =>{
       this.game = data;
     })
+  }
+
+  public ngAfterViewInit(){
+    this.loading = false;
   }
 
 }
