@@ -4,12 +4,12 @@
     <div class="bannerDetails">
         <!-- <p class="bannerTitle">{{game.name}}</p> -->
         <!-- <img src="/assets/img/elden_ring_logo.png" alt="" class="logoImg"> -->
-        <p class="bannerText">
-            {{game.description}}
+        <p class="bannerText" innerHtml="{{game.description}}">
+            
         </p>
         <div class="bannerBtns">
             <app-banner-button class="filled" text="Buy now"></app-banner-button>
-            <app-banner-button class="unfilled" text="More info"></app-banner-button>
+            <app-banner-button class="unfilled" text="More info" (click)="toDetailPage(game.id)"></app-banner-button>
         </div>
     </div>
 </div>

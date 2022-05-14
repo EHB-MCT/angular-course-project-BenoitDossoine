@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
@@ -8,10 +9,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BannerComponent implements OnInit {
 
   @Input() game:any;
-  constructor() { }
+  constructor(private route:Router) {}
 
   ngOnInit(): void {
-    console.log(this.game);
+  }
+
+  ngOnChanges(){
+    this.game.description = this.game.description.substring(0,200)+'...'; 
+  }
+
+  toDetailPage(id:number){
+    this.route.navigate(['/detailpage',id])
   }
 
 }

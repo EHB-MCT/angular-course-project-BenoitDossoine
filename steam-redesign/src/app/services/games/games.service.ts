@@ -24,9 +24,9 @@ export class GamesService{
             return(response?.games || []).map((game:any)=>{
                 return{
                     name: game.name,
-                    id: game.team_appid,
-                    description: game.short_description,
-                    header: game.header_image,
+                    id: game.id,
+                    description: game.description,
+                    header: game.background_image,
                 }
             });
         }))
