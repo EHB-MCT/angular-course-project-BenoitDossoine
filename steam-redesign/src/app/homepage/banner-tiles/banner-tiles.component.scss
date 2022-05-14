@@ -1,9 +1,11 @@
 @import './_variables';
 :host{
     margin: 30px $spacer;
-    width: 76%;
+    width: calc(100% - 2 * $spacer);
+    height: 220px;
 
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 16px;
 }
