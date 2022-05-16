@@ -19,6 +19,7 @@ import { DetailPageComponent } from './detail-page/detail-page.component';
 import { DetailBannerComponent } from './detail-page/detail-banner/detail-banner.component';
 import { ScreenshotsComponent } from './detail-page/screenshots/screenshots.component';
 import { DetailSpecsComponent } from './detail-page/detail-specs/detail-specs.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { DetailSpecsComponent } from './detail-page/detail-specs/detail-specs.co
     DetailBannerComponent,
     ScreenshotsComponent,
     DetailSpecsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
