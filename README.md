@@ -1,12 +1,16 @@
 # SteamRedesign
 
+## Overview
+
+The Steam Redesign project is a course project that aims to recreate Steam using Angular and React. This repository contains the Angular part of this project. The live version of this project can be found here: https://steamredesignangular.web.app/ 
 
 ## Deployment
 Deployment was done via firebase. <br>
 https://steamredesignangular.web.app/ 
 
-The API was written by myself, to relay the data from the RAWG API to this website.
-https://rawg.io/apidocs
+The API was written by myself, to relay the data from the RAWG API (https://rawg.io/apidocs) to this website.
+You can access this API via: https://steam-redesign.herokuapp.com/.
+
 
 ## Sources
 
